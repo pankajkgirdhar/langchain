@@ -1,0 +1,9 @@
+langchain
+langchain-mistralai
+langchain-groq
+langchain-ollama
+python_dotenv
+ddgs
+ipykernel
+langsmith
+langchain-openai
