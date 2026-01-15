@@ -2,10 +2,12 @@ langchain
 langchain-cohere
 langchain-groq
 langchain-google-genai
+langchain-cohere
 python_dotenv
 ddgs
 ipykernel
 langsmith
 langchain-openai
 litellm
-rich
+pypdf
+langchain-chroma
