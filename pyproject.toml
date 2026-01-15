@@ -18,6 +18,7 @@ dependencies = [
     "langchain-openai>=1.1.5",
     "langsmith>=0.5.0",
     "litellm>=1.80.16",
+    "pyodbc>=5.3.0",
     "pypdf>=6.6.0",
     "python-dotenv>=1.2.1",
     "rich>=14.2.0",

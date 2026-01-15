@@ -11,3 +11,4 @@ langchain-openai
 litellm
 pypdf
 langchain-chroma
+pyodbc
