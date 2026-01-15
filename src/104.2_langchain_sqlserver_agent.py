@@ -55,7 +55,7 @@ agent = create_agent(
     system_prompt=custom_system_prompt,
 )
 
-question = "Find the unit price of Blade as of 1-Mar-2011?"
+question = "Find the unit price of Blade as of 1-Mar-2011? Also provide the exact SQL query you used to get the answer."
 
 result = agent.invoke({"messages": question})
 
