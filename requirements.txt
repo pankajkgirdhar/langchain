@@ -1,9 +1,11 @@
 langchain
-langchain-mistralai
+langchain-cohere
 langchain-groq
-langchain-ollama
+langchain-google-genai
 python_dotenv
 ddgs
 ipykernel
 langsmith
 langchain-openai
+litellm
+rich
