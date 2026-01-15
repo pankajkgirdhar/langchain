@@ -20,6 +20,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+data/
+chromadb/
 .eggs/
 lib/
 lib64/

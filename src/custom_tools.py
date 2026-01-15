@@ -1,6 +1,6 @@
 from ddgs import DDGS
 from pydantic import BaseModel
-from langchain.tools import tool, ToolRuntime
+from langchain.tools import tool
 
 class SearchResults(BaseModel):
     title: str

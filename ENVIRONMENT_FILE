@@ -1,0 +1,5 @@
+## Update values with your keys and rename this file as .env
+
+COHERE_API_KEY=<your key here>
+GROQ_API_KEY=<your key here>
+GOOGLE_API_KEY=<your key here>

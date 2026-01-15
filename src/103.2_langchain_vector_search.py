@@ -1,3 +1,4 @@
+import asyncio
 from langchain_chroma import Chroma
 from langchain_cohere import CohereEmbeddings
 import os
@@ -21,9 +22,31 @@ vector_store = Chroma(
     persist_directory=chroma_vectordb_dir
 )
 
-
-results = vector_store.similarity_search_with_relevance_scores(query="What was Nike's revenue in 2023?", k=3)
-print(results)
+###############################  Vector Search Example - Start #####################################
+### Need to uncomment one of the below sections to run the example ###
+# results = vector_store.similarity_search_with_relevance_scores(query="What was Nike's revenue in 2023?", k=3)
+# print(results)
 
 # results = vector_store.similarity_search(query="What was Nike's revenue in 2023?", k=2)
 # print(results)
+###############################  Vector Search Example - End #####################################
+
+
+
+###############################  Retriver Example - Start #####################################
+# retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 2})
+# docs = retriever.invoke(input="What was Nike's revenue in 2023?")
+# print(docs)
+###############################  Retriver Example - End #####################################
+
+
+
+###############################  Retriver Example Async - Start #####################################
+async def main():
+    retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 2})
+    docs = await retriever.ainvoke(input="What was Nike's revenue in 2023?")
+    print(docs)
+
+# Run the async function
+asyncio.run(main())
+###############################  Retriver Example Async - End #####################################
